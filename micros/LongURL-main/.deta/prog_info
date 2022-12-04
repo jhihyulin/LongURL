@@ -1,0 +1,1 @@
+{"id":"4317c9c9-a71c-4d47-a729-d744cc901ae5","space":31107,"runtime":"python3.9","name":"WEBPAGE-LONGURL-main","path":"r8y1md","project":"c0qtj4cd","account":"144798365827","region":"ap-southeast-1","deps":["fastapi==0.85.0","pydantic==1.9.2","python-dotenv==0.21.0"],"envs":["KEY","SPLIT_TEXT"],"public":true,"log_level":"off","cron":""}
