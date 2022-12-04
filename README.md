@@ -15,10 +15,10 @@ graph TB
     B[Input URL]
     C[encryption]
     D[Reise HTTP400]
-    E[prefix the url]
+    E[Prefix the url]
     B --> A
     key --> C
-    A --> |coomplete| C --> E --> Return
+    A --> |complete| C --> E --> Return
     A --> |incomplete| D
 ```
 
@@ -29,7 +29,7 @@ graph TD
     A[Iput the Long URL]
     B[key]
     C[decryption]
-    D[Return Original URL]
+    D[Return and jump to Original URL]
     A --> C --> D
     B --> C
 ```
