@@ -38,6 +38,8 @@ app.add_middleware(
 )
 
 # 加密
+
+
 def enctry(s):
     encry_str = ""
     for i, j in zip(s, KEY):  # i為字符，j為秘鑰字符
