@@ -62,7 +62,6 @@ def dectry(s):
 
 
 class Create_long_url(BaseModel):
-    firebase_uid: str
     original_url: str
 
 
