@@ -105,21 +105,21 @@ step 1: go to your repositorie's action page tick ```visor enable``` and click `
 step 2: Finish, visor is enable
 
 ## Usage
-```POST /create``` to create a short url
+```POST /create``` to create a long url
 ```json
 {
-    "origin_url": "<your long url>"
+    "origin_url": "<your short url>"
 }
 ```
 
 response```HTTP200```
 ```json
 {
-    "url": "<your short url>"
+    "url": "<your long url>"
 }
 ```
 
-```GET /<short url>``` to redirect to the long url
+```GET /<long url>``` to redirect to the short url
 
 response```HTTP307```
 ```python
