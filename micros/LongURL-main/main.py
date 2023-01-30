@@ -17,21 +17,10 @@ SPLIT_TEXT = os.getenv("SPLIT_TEXT")
 SERVER_PREFIX = os.getenv("SERVER_PREFIX")
 # init webserver
 app = FastAPI()
-origins = [
-    "http://localhost",
-    "http://localhost:8080",
-    "http://localhost:8000",
-    "https://localhost",
-    "https://localhost:8080",
-    "https://localhost:8000",
-    "https://jhihyulin.live",
-    "https://www.jhihyulin.live",
-    "https://l.jhihyulin.live",
-    "https://lurl.jhihyulin.live"
-]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=['*'],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
