@@ -71,6 +71,6 @@ def redirect_to_url(url_key):
     Check the url_key is in DB, redirect to original url.
     """
 
-    #raise HTTPException(status_code=404, detail="Key not found")
+    # raise HTTPException(status_code=404, detail="Key not found")
     original_url = dectry(url_key)
     return RedirectResponse(original_url)
