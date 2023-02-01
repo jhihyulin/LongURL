@@ -23,6 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 def enctry(s):
     encry_str = ""
     for i, j in zip(s, KEY):
@@ -31,6 +32,7 @@ def enctry(s):
     s = base64.b64encode(encry_str.encode("utf-8"))
     s = Base62.encodebytes(s)
     return s
+
 
 def dectry(s):
     s = Base62.decodebytes(s)
@@ -41,8 +43,10 @@ def dectry(s):
         dec_str = dec_str+temp
     return dec_str
 
+
 class Create_long_url(BaseModel):
     original_url: str
+
 
 @app.post("/create")
 def shorten_request(data: Create_long_url):
