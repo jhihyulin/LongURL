@@ -1,4 +1,7 @@
 # LongURL
+
+# MOVE to [jhihyulin/LURL](https://github.com/jhihyulin/LURL)
+
 A simple Long URL service deploy on deta.sh with FastAPI
 
 This is a simple long url service, you can use it to longten your short url.
