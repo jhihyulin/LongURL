@@ -1,6 +1,6 @@
 # LongURL
 
-# MOVE to [jhihyulin/LURL](https://github.com/jhihyulin/LURL)
+## MOVE to [jhihyulin/LURL](https://github.com/jhihyulin/LURL)
 
 A simple Long URL service deploy on deta.sh with FastAPI
 
